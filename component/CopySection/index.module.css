@@ -1,0 +1,17 @@
+.copyContainer {
+  @apply flex flex-col absolute text-black border border-purple-400 rounded p-2;
+  left: 30px;
+  bottom: 100px;
+}
+
+.copyContainer hr {
+  @apply my-1 border-purple-400;
+}
+
+.copyContainer .copyHeading {
+  @apply text-base cursor-pointer;
+}
+
+.copyContainer .copyDescription {
+  @apply flex items-center text-sm cursor-pointer;
+}

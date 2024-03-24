@@ -1,0 +1,41 @@
+.homeContainer {
+  @apply w-full max-w-md mx-auto p-6 border border-purple-400 rounded mt-8 text-black flex flex-col items-center justify-center;
+  height: 80vh;
+
+  h1 {
+    @apply text-3xl text-center;
+  }
+
+  button {
+    @apply bg-blue-400 py-2 px-4 rounded mt-4;
+  }
+
+  .enterRoom {
+    @apply flex flex-col items-center mt-4 w-full;
+
+    input {
+      @apply text-black text-lg p-2 rounded w-full mb-4 border border-blue-300; /* Adjust padding and width for better appearance */
+    }
+
+    /* Apply light blue border on focus (active) state */
+    input:focus {
+      @apply border-blue-400 outline-none;
+    }
+  }
+
+  .separatorText {
+    @apply my-4 text-2xl;
+  }
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homeContainer {
+    max-width: 1024px; /* Adjust max-width for larger screens */
+  }
+}
